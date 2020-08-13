@@ -1,4 +1,3 @@
-# Who am I
 
 * Where are you from?
 my moms belly
