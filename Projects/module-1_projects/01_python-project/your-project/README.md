@@ -5,22 +5,16 @@
 
 *[DATA ft 08-20]*
 
-## Content
-- [Project Description](#project-description)
-- [Rules](#rules)
-- [Workflow](#workflow)
-- [Organization](#organization)
-- [Links](#links)
 
 ## Project Description
-use play-hannahs-hangman-here.ipynb to play
+use >> play-hannahs-hangman-here.ipynb << to play
 
 ## Rules
 a classical hangman game for two players 
 
 ## Workflow
 - structure for one round in a notebook
-- hangmanprinter in a otebook
+- hangmanprinter in a notebook
 - main notebook to run the game
 
 ## Organization
