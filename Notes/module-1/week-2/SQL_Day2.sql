@@ -115,3 +115,94 @@ FROM order_items oi
 GROUP BY 1
 ORDER BY 4;
 
+-- PART 2
+
+-- 
+-- Subqueries 
+-- Temp tables
+-- CTE (common table expressions)
+-- 
+
+-- Average review rating, grouped by seller state
+
+/*
+| seller_state | avg_review | no_of_reviews|
+|--------------|------------|--------------|
+|SP            | 3.9        | 192837       |
+|BA            | 3.3        | 809          |
+
+*/ 
+ 
+SELECT *
+FROM sellers 
+LIMIT 1000;
+
+-- are seller_ids unique in the sellers table?
+SELECT
+	COUNT(*), 
+	COUNT(DISTINCT seller_id)
+FROM sellers;
+
+SELECT *
+FROM order_items
+ORDER BY order_id 
+LIMIT 1000;
+
+-- get a unique list of seller_id <-> order_id relations
+SELECT DISTINCT 
+	seller_id, 
+	order_id
+FROM order_items;
+
+-- Combine both data sets
+-- Approach 1: nest subquery
+
+SELECT 
+	s.seller_state, 
+	s.seller_id, 
+	so.order_id
+FROM sellers s
+	INNER JOIN (SELECT DISTINCT 
+					seller_id, 
+					order_id
+				FROM order_items) so
+	ON s.seller_id = so.seller_id
+LIMIT 1000;
+
+-- Approach 2: create a temporary table
+
+CREATE TABLE temp_seller_order_links AS
+	SELECT DISTINCT 
+		seller_id, 
+		order_id
+	FROM order_items;
+
+
+SELECT 
+	s.seller_state,
+	s.seller_id,
+	sol.order_id
+FROM sellers s
+	INNER JOIN seller_order_links sol
+	ON s.seller_id = sol.seller_id
+LIMIT 1000;
+
+-- Approach 3: Common Table Expression (CTE) aka WITH table
+WITH seller_order_links2 AS (
+	SELECT DISTINCT 
+			seller_id, 
+			order_id
+		FROM order_items) 
+		
+-- an_addition_table AS (
+-- 	SELECT 1)
+
+SELECT 
+	s.seller_state, 
+	s.seller_id, 
+	sol.order_id
+FROM sellers s
+	INNER JOIN seller_order_links2 sol
+	ON s.seller_id = sol.seller_id
+LIMIT 1000; 
+
