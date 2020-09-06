@@ -28,7 +28,7 @@ The tableau presentation gives an overview of following key data:
 
 ## Input Data
 
-"Pokemon.txt"
+"pokemon.txt"
 Link: https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VI)
 
 
