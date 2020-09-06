@@ -9,7 +9,6 @@ Link: https://public.tableau.com/views/PokemonGenerations_15994196943530/0_Summa
 ## Overview
 
 Pokemon Generations 1 - 6
-
 The tableau presentation gives an overview of following key data:
 
         1.)   Cardinality:  Number of Pokemons
@@ -29,7 +28,7 @@ The tableau presentation gives an overview of following key data:
 
 ## Input Data
 
-Pokemon.cvs
+"Pokemon.txt"
 Link: https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VI)
 
 
