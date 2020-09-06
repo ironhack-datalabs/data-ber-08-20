@@ -41,7 +41,7 @@ I had NO idea whatsoever about Pokemons, and never heard about Pokemon-Generatio
 My first visualisations proved to be unreasonable - again and again inconsistencies came up and futher research indicated.
 
 Finally I found this table: https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VI)
-I made a text file copy (file in data folder) and made all final visualisations with this data.
+I made a text file copy ("pokemon.txt") and made all final visualisations with this data.
 
 The structure of the tableau gives first an overview of all contents.
 
