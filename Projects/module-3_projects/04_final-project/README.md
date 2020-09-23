@@ -35,7 +35,7 @@ The goal of this project is to give you an opportunity to demonstrate the skills
 * Model evaluation
 * Reporting and presentation of insights
 
-Final project MUST include either a Linear Regression model or a Machine Learning model.
+Final project MUST include either a Advanced Statistics such as a Linear Regression model or a Machine Learning mode.
 
 The final project is structured into 2 weeks in which you build up your deliverables progressively and iteratively. We have provided a list of data sets for you to choose from. However, you are encouraged to obtain your own data sets. Using the knowledge you have acquired and your experience working with data, you will come up with a plan for what you are going to do and then design the project around the data set you have chosen.
 
