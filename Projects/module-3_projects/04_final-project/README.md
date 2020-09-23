@@ -35,6 +35,8 @@ The goal of this project is to give you an opportunity to demonstrate the skills
 * Model evaluation
 * Reporting and presentation of insights
 
+Final project MUST include either a Linear Regression model or a Machine Learning model.
+
 The final project is structured into 2 weeks in which you build up your deliverables progressively and iteratively. We have provided a list of data sets for you to choose from. However, you are encouraged to obtain your own data sets. Using the knowledge you have acquired and your experience working with data, you will come up with a plan for what you are going to do and then design the project around the data set you have chosen.
 
 **You can work individually or in self organized groups of up to 4**. We'll be guiding you along the process and helping you as you go. You will be working on this project over the course of 2 weeks. The proposed progression is listed below. Use it as a guideline to keep your work structured but if you feel like you have a working flow, feel free to manage the project however you think works best.
